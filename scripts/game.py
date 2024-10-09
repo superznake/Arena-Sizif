@@ -1,10 +1,12 @@
 from scripts.character import Character
 from scripts.game_states import GameState as State
+from scripts.enemy import Enemy
 
 
 class Game:
 
     def __init__(self):
+        self.enemy = None
         self.character = None
         self.state = State.MENU
 
@@ -15,5 +17,7 @@ class Game:
     def shop(self):
         self.state = State.SHOP
 
-    def battle(self):
+    def battle(self, enemy: Enemy):
         self.state = State.BATTLE
+        self.enemy = enemy
+        

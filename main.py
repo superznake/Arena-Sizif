@@ -2,13 +2,18 @@ import os
 import pygame
 
 from scripts.content_loader import ContentLoader
+from scripts.save_load import SaveLoadManager
 
 # loader setup
-main_dir = os.path.split(os.path.abspath(__file__))[0]  # get
+main_dir = os.path.split(os.path.abspath(__file__))[0]
+
 content_dir = os.path.join(main_dir, "content")
 loader = ContentLoader(content_dir=content_dir)
-
 loader.character_loader()
+
+saves_dir = os.path.join(main_dir, "saves")
+saver = SaveLoadManager(directory=saves_dir)
+
 
 # pygame setup
 pygame.init()
@@ -26,6 +31,7 @@ while running:
     # pygame.QUIT event means the user clicked X to close your window
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
+            saver.save()
             running = False
 
     # fill the screen with a color to wipe away anything from last frame

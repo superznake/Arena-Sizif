@@ -12,3 +12,8 @@ class ActiveAbility:
 
     def use(self, target):
         ...
+
+
+class EnemyAbility(ActiveAbility):
+    def use(self, target):
+        ...

@@ -11,3 +11,8 @@ class UltraAbility:
 
     def use(self, target):
         ...
+
+
+class EnemyUltra:
+    def use(self, target):
+        ...
