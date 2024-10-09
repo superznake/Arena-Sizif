@@ -1,6 +1,6 @@
 from typing import List
 
-from content.animations import CharacterAnimation as Animation
+from scripts.animations import CharacterAnimation as Animation
 from scripts.active_ability import ActiveAbility
 from scripts.ultra_ability import UltraAbility
 

@@ -1,4 +1,4 @@
-from content.animations import AbilityAnimation as Animation
+from scripts.animations import AbilityAnimation as Animation
 
 
 class UltraAbility:

@@ -1,5 +1,14 @@
-# Example file showing a circle moving on screen
+import os
 import pygame
+
+from scripts.content_loader import ContentLoader
+
+# loader setup
+main_dir = os.path.split(os.path.abspath(__file__))[0]  # get
+content_dir = os.path.join(main_dir, "content")
+loader = ContentLoader(content_dir=content_dir)
+
+loader.character_loader()
 
 # pygame setup
 pygame.init()
