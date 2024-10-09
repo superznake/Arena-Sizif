@@ -4,6 +4,8 @@ import pygame
 # pygame setup
 pygame.init()
 screen = pygame.display.set_mode((600, 600))
+pygame.display.set_caption("Arena-Sizif")
+pygame.mouse.set_visible(False)
 clock = pygame.time.Clock()
 running = True
 dt = 0
