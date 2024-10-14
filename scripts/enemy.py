@@ -1,7 +1,7 @@
 from typing import List
 
 from scripts.active_ability import EnemyAbility as Ability
-from scripts.animations import Animation
+from scripts.animations import EnemyAnimation as Animation
 from scripts.ultra_ability import EnemyUltra as Ultra
 
 

@@ -13,6 +13,6 @@ class UltraAbility:
         ...
 
 
-class EnemyUltra:
+class EnemyUltra(UltraAbility):
     def use(self, target):
         ...
