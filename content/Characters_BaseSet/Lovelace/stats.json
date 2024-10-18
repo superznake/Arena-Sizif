@@ -18,7 +18,7 @@
       "type": "special"
     },
     "passive2": {
-      "name": "None"
+      "name": null
     },
     "active1": {
       "name": "Power strike|Сильный удар",
@@ -26,10 +26,10 @@
       "damage": 20
     },
     "active2": {
-      "name": "None"
+      "name": null
     },
     "active3": {
-      "name": "None"
+      "name": null
     },
     "ultra": {
       "name": "Overpower strike|Очень сильный удар",
